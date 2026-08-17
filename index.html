@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Word Weekend Registration · Gate Ministries Blouberg</title>
+  <meta name="description" content="Register for the Gate Ministries Blouberg Word Weekend — 18 to 20 September 2026.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- ================== HERO ================== -->
+  <header class="hero">
+    <div class="hero-media" aria-hidden="true"></div>
+    <div class="hero-overlay" aria-hidden="true"></div>
+
+    <div class="hero-content">
+      <!-- Real GMB logo (white on transparent, sits nicely on dark hero) -->
+      <img src="logo.png"
+           alt="Gate Ministries Blouberg"
+           class="hero-logo hero-logo-img"
+           width="447" height="447">
+
+      <p class="hero-eyebrow">You're invited to</p>
+      <h1 class="hero-title">Word Weekend</h1>
+      <p class="hero-date">18 &ndash; 20 September 2026</p>
+    </div>
+
+    <a href="#registration" class="hero-scroll" aria-label="Scroll to registration">
+      <svg viewBox="0 0 24 24"><path d="M6 9l6 6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </a>
+  </header>
+
+
+  <!-- ================== EVENT DETAILS ================== -->
+  <section class="details">
+    <div class="container">
+      <div class="details-grid">
+
+        <div class="detail-block">
+          <p class="detail-label">Where</p>
+          <p class="detail-value">
+            Gate Ministries Blouberg<br>
+            Blouberg, Cape Town
+          </p>
+        </div>
+
+        <div class="detail-block">
+          <p class="detail-label">Schedule</p>
+          <ul class="sessions">
+            <li>
+              <span class="session-day">Friday</span>
+              <span class="session-name">Session 1</span>
+              <span class="session-time">7:00 PM</span>
+            </li>
+            <li>
+              <span class="session-day">Saturday</span>
+              <span class="session-name">Session 1</span>
+              <span class="session-time">9:30 AM</span>
+            </li>
+            <li>
+              <span class="session-day">Sunday</span>
+              <span class="session-name">Final Session</span>
+              <span class="session-time">9:30 AM</span>
+            </li>
+          </ul>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ================== REGISTRATION ================== -->
+  <section class="registration" id="registration">
+    <div class="container container--narrow">
+
+      <!-- === FORM VIEW === -->
+      <div id="form-view">
+
+        <div class="section-header">
+          <p class="section-eyebrow">Please confirm your attendance</p>
+          <h2 class="section-title">Registration</h2>
+        </div>
+
+        <p class="section-intro">
+          We look forward to gathering together in the Word. Share your details below so we know to expect you &mdash; a confirmation will follow on the email you provide.
+        </p>
+
+        <!--
+          ====================================================================
+          WEB3FORMS SETUP
+          Replace YOUR_ACCESS_KEY_HERE with your access key from web3forms.com
+          (see README.md for the 2-minute setup)
+          ====================================================================
+        -->
+        <form id="registration-form" novalidate>
+
+          <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+          <input type="hidden" name="subject" value="📖 New Word Weekend Registration">
+          <input type="hidden" name="from_name" value="Word Weekend · Gate Ministries Blouberg">
+          <input type="checkbox" name="botcheck" style="display:none" tabindex="-1" autocomplete="off">
+
+          <div class="form-grid">
+
+            <label class="field">
+              <span class="field-label">First name</span>
+              <input type="text" name="First name" autocomplete="given-name" required>
+            </label>
+
+            <label class="field">
+              <span class="field-label">Surname</span>
+              <input type="text" name="Surname" autocomplete="family-name" required>
+            </label>
+
+            <label class="field field--full">
+              <span class="field-label">Cellphone number</span>
+              <input type="tel" name="Cellphone" autocomplete="tel" required>
+            </label>
+
+            <label class="field field--full">
+              <span class="field-label">Email address</span>
+              <input type="email" name="email" autocomplete="email" required>
+            </label>
+
+          </div>
+
+          <p class="form-error" id="form-error" hidden></p>
+
+          <button type="submit" class="btn-submit">
+            <span class="btn-label">Confirm my attendance</span>
+            <span class="btn-spinner" aria-hidden="true"></span>
+          </button>
+
+          <p class="form-note">You'll receive a confirmation on the email you provide.</p>
+
+        </form>
+
+      </div>
+
+      <!-- === SUCCESS VIEW === -->
+      <div id="success-view" hidden>
+
+        <div class="success">
+          <div class="success-mark" aria-hidden="true">
+            <svg viewBox="0 0 60 60">
+              <circle cx="30" cy="30" r="27" fill="none" stroke="currentColor" stroke-width="2"/>
+              <path d="M18 30l8 8 16-16" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+
+          <div class="section-header">
+            <p class="section-eyebrow">You're all set</p>
+            <h2 class="section-title">Thank you, <span id="success-name">friend</span>.</h2>
+          </div>
+
+          <p class="section-intro">
+            Your attendance is confirmed for <strong>Word Weekend</strong>, 18 &ndash; 20 September 2026. A confirmation has been sent to the email you provided.
+          </p>
+
+          <p class="success-verse">
+            "So faith comes from hearing, and hearing through the word of Christ."<br>
+            <span>&mdash; Romans 10:17</span>
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+
+  <!-- ================== FOOTER ================== -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-content">
+
+        <p class="footer-eyebrow">For further information</p>
+        <p class="footer-name">Pastor Amos James</p>
+
+        <div class="footer-contact">
+          <a href="tel:+27832897627">083 289 7627</a>
+          <span class="footer-dot" aria-hidden="true">·</span>
+          <a href="mailto:info@gateministriesblouberg.co.za">info@gateministriesblouberg.co.za</a>
+        </div>
+
+        <div class="footer-divider" aria-hidden="true"></div>
+
+        <a href="https://www.gateministriesblouberg.co.za" class="footer-website" target="_blank" rel="noopener">
+          www.gateministriesblouberg.co.za
+        </a>
+
+      </div>
+    </div>
+  </footer>
+
+
+  <!-- Web3Forms submission -->
+  <script>
+    (function () {
+      var form   = document.getElementById('registration-form');
+      var btn    = form.querySelector('.btn-submit');
+      var errBox = document.getElementById('form-error');
+
+      form.addEventListener('submit', function (e) {
+        e.preventDefault();
+        errBox.hidden = true;
+
+        if (!form.checkValidity()) {
+          form.reportValidity();
+          return;
+        }
+
+        btn.disabled = true;
+
+        var fd = new FormData(form);
+        var payload = {};
+        fd.forEach(function (v, k) { payload[k] = v; });
+
+        fetch('https://api.web3forms.com/submit', {
+          method:  'POST',
+          headers: {
+            'Content-Type': 'application/json',
+            'Accept':       'application/json'
+          },
+          body: JSON.stringify(payload)
+        })
+        .then(function (res) {
+          return res.json().then(function (body) {
+            return { ok: res.ok, status: res.status, body: body };
+          });
+        })
+        .then(function (result) {
+          if (!result.ok || !result.body || result.body.success !== true) {
+            throw new Error(
+              (result.body && result.body.message) || ('HTTP ' + result.status)
+            );
+          }
+          document.getElementById('success-name').textContent =
+            (payload['First name'] || 'friend').toString().trim();
+          document.getElementById('form-view').hidden    = true;
+          document.getElementById('success-view').hidden = false;
+          document.getElementById('registration')
+            .scrollIntoView({ behavior: 'smooth', block: 'start' });
+        })
+        .catch(function (err) {
+          btn.disabled = false;
+          errBox.textContent = "Sorry, we couldn't send your registration ("
+            + (err.message || 'unknown error')
+            + "). Please try again, or email info@gateministriesblouberg.co.za.";
+          errBox.hidden = false;
+        });
+      });
+    })();
+  </script>
+
+</body>
+</html>
